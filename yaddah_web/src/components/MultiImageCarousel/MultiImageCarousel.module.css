@@ -1,0 +1,27 @@
+.main{
+    height: 450px;
+}
+.main img{
+    height: 100%;
+}
+
+@media (max-width:1000px) {
+    .main{
+        height: 400px;
+    }
+}
+@media (max-width:800px) {
+    .main{
+        height: 350px;
+    }
+}
+@media (max-width:700px) {
+    .main{
+        height: 300px;
+    }
+}
+@media (max-width:600px) {
+    .main{
+        height: 250px;
+    }
+}

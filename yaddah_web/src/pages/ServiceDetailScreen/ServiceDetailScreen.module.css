@@ -1,0 +1,222 @@
+.bookingStrip {
+  background-color: var(--clr-primary);
+  padding: 30px 0;
+}
+
+.bookingStrip h3 {
+  color: #fff;
+  text-align: center;
+}
+
+/* renderImageGallery */
+.imageGalleryContainer {
+  margin: 50px 0;
+}
+
+.galleryBigImageContainer {
+  height: 646px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.galleryBigImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.gallerySmallImageContainer {
+  /* width: 278px; */
+  height: 304px;
+  width: 100%;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallerySmallImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.noImageFound{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.noImageFound svg{
+  font-size: 60px;
+}
+.gap {
+  row-gap: 20px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subHead {
+  font-family: "Poppins SemiBold";
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 10px 20px;
+  border-radius: 23px;
+}
+.time p {
+  font-family: "Poppins SemiBold";
+  font-size: 15px;
+  margin: 0px !important;
+}
+.desc {
+  background-color: #ffffff;
+  box-shadow: 0px 13px 43px #0000000f;
+  border-radius: 11px;
+  padding: 20px;
+  width: 100%;
+}
+.desc p {
+  margin: 0px !important;
+  font-weight: 400;
+}
+.scroller {
+  display: flex;
+  gap: 20px;
+}
+.venueScroller {
+  padding-block: 20px;
+  justify-content: center;
+}
+.staffScroller {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.venueCardWrap {
+  width: 350px;
+  height: 390px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.staffCardWrap {
+  width: 350px;
+  height: 250px;
+  flex-shrink: 0;
+}
+
+.bodyLoader {
+  position: fixed;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+.spBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 187px;
+  width: 450px;
+  z-index: 99;
+  overflow: hidden;
+}
+.spBadge:before {
+  content: attr(data-badge);
+  position: absolute;
+  left: 0;
+  padding: 0.2rem 0;
+  width: 100%;
+  transform: rotate(-45deg) translate(-32%, -67px);
+  color: var(--clr-font-inverted);
+  text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
+}
+.spBadge[data-badge="top rated"]:before {
+  background-color: crimson;
+}
+.spBadge[data-badge="preferred"]:before {
+  background-color: darkcyan;
+}
+
+
+@media (max-width:992px) {
+  .imageGalleryContainer {
+    gap: 10px;
+  }
+  .galleryBigImageContainer {
+    height: 350px;
+    
+  }
+  .gallerySmallImageContainer {
+    height: 200px;
+  
+  }
+}
+@media (max-width:600px) {
+ 
+  .galleryBigImageContainer {
+    height: 300px;
+    
+  }
+  .gallerySmallImageContainer {
+    height: 200px;
+  
+  }
+}
+@media (max-width:450px) {
+  .time {
+   
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .time p {
+    font-family: "Poppins SemiBold";
+    font-size: 10px;
+    margin: 0px !important;
+    white-space: inherit;
+  }
+}
+@media (max-width:380px) {
+ 
+  .venueCardWrap {
+    width: 280px;
+    
+  }
+  .staffCardWrap {
+    width: 280px;
+    
+  }
+}

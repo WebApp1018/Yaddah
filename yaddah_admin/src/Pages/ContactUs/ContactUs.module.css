@@ -1,0 +1,135 @@
+.content__wrapper {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  min-height: calc(100vh - 150px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .headerRight {
+    width: 100%;
+  }
+}
+
+/* .faq__header h1 {
+    font-size: var(--fs-h3-header-small);
+  } */
+
+.faq__header button {
+  background-color: var(--clr-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--clr-font-inverted);
+  text-transform: capitalize;
+  min-width: 150px;
+}
+
+.status__filter__wrapper select {
+  background-color: var(--clr-secondary);
+  padding: 0.5rem 1rem;
+  color: var(--clr-font-inverted);
+  border: none;
+  border-radius: 0.5rem;
+  margin-inline-start: 0.5rem;
+  min-width: 100px;
+}
+
+/* Table Css */
+.table__wrapper {
+  margin-block-start: 3rem;
+  padding: 1rem;
+  background-color: var(--clr-font-inverted);
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px #00000030;
+  border-radius: 1rem;
+  border: 1px solid var(--clr-secondary);
+}
+
+.table__wrapper .btn__secondary {
+  background-color: var(--clr-secondary);
+  margin-inline-end: 0.5rem;
+  border: none;
+  min-width: 150px;
+}
+
+.table__wrapper .btn__primary {
+  background-color: var(--clr-primary);
+  border: none;
+  min-width: 150px;
+}
+
+.table__wrapper thead tr,
+.table__wrapper tbody tr {
+  position: relative;
+}
+
+.table__wrapper thead tr th {
+  color: var(--clr-font-inverted);
+}
+
+.table__wrapper thead tr th,
+.table__wrapper tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+  padding-block: 2rem;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.table__wrapper thead tr th:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--clr-primary);
+  width: 100%;
+  height: calc(100% - 1rem);
+  inset: 0;
+  margin-block: auto;
+  border-radius: 1rem;
+}
+
+.table__wrapper tbody tr td:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--clr-font-inverted);
+  width: 100%;
+  height: calc(100% - 1rem);
+  inset: 0;
+  margin-block: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px #00000030;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  .table__wrapper .btn__secondary {
+    margin-inline-end: 0;
+    margin-block-end: 0.5rem;
+  }
+}

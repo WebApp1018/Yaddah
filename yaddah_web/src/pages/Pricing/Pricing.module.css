@@ -1,0 +1,46 @@
+.pricing__section {
+  padding-block: 4rem;
+}
+.pricing__header h2 {
+  text-align: center;
+  font-size: var(--fs-h3-header-small);
+  color: var(--clr-primary);
+  margin-block-end: 2rem;
+}
+.pricing__button {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+.active__button {
+  background-color: var(--clr-secondary) !important;
+  color: var(--clr-font-inverted) !important;
+}
+.pricing__button button {
+  padding: 1rem 2rem;
+  border: 2px solid var(--clr-secondary);
+  color: var(--clr-secondary);
+  background-color: var(--clr-font-inverted);
+}
+.pricing__card__wrapper {
+  margin-block: 4rem;
+}
+.cardRow {
+  row-gap: 2rem;
+}
+.pricing__packageExpired {
+  background: var(--clr-primary);
+  padding: 10px;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.pricing__card__wrapper > *:nth-child(even) {
+  --bg-card: var(--clr-primary);
+}
+.pricing__card__wrapper > *:nth-child(odd) {
+  --bg-card: var(--clr-secondary);
+}
+.loader {
+  min-height: calc(100vh - 600px);
+}

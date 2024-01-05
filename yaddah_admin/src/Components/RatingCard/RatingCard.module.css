@@ -1,0 +1,106 @@
+.userCard__wrapper {
+  padding: 0 1rem 1rem 1rem;
+  box-shadow: 0 0 20px #00000030;
+  text-align: center;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  position: relative;
+  min-height: 230px;
+}
+
+.userCard__img {
+  justify-self: center;
+  border-radius: 1rem;
+  margin-top: -3rem;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+}
+
+.userCard__wrapper p {
+  margin: 0;
+}
+
+.userCard__button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userCard__button__wrapper button {
+  flex: 1;
+}
+
+.userCard__button {
+  background-color: var(--clr-secondary);
+  color: var(--clr-font-inverted);
+  font-family: var(--ff-poppins-semibold);
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userCard__button__bordered {
+  background-color: transparent;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+}
+
+.userCard__contextMenu__wrapper {
+  background-color: blue;
+}
+
+.userCard__badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 300px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.userCard__badge:before {
+  content: attr(data-badge);
+  position: absolute;
+  left: 0;
+  padding: 0.2rem 0;
+  width: 100%;
+  transform: rotate(-45deg) translate(-32%, -67px);
+  color: var(--clr-font-inverted);
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+}
+
+.userCard__badge[data-badge="top rated"]:before {
+  background-color: crimson;
+}
+
+.userCard__badge[data-badge="preferred"]:before {
+  background-color: darkcyan;
+}
+
+.userCard__contextMenu__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.userCard__contextMenu {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  background-color: var(--clr-font-inverted);
+  box-shadow: 0 0 10px #00000030;
+  padding: 1rem;
+  min-width: 200px;
+  border-radius: 1rem;
+  z-index: 10;
+}

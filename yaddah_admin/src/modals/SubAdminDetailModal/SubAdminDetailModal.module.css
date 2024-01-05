@@ -1,0 +1,42 @@
+.mainHead {
+  font-size: 18px;
+  font-family: "Poppins SemiBold";
+  color: var(--dashboard-main-color);
+  margin-bottom: 5px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 3px 0 5px 0;
+  width: 100%;
+  white-space: pre-wrap;
+  text-transform: capitalize;
+}
+
+.timeText {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 3px 0 5px 0;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.viewEventMain {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.imgBox {
+  width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img{
+  display: flex;
+  justify-content: center;
+}

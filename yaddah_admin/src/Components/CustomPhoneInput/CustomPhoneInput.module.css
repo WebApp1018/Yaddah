@@ -1,0 +1,49 @@
+.phoneInput {
+  font-family: "Open-Sans-semiBold";
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  letter-spacing: 1.4px !important;
+  background-color: #fff !important;
+  width: 100% !important;
+  min-height: 50px !important;
+  border: none !important;
+  overflow: hidden;
+}
+
+.phoneInputContainer {
+  background-color: var(--white-color);
+  box-shadow: 0px 0 5px 2px #0000000d;
+  border-radius: 10px;
+}
+
+.phoneInput:focus {
+  box-shadow: none !important;
+}
+
+.phoneInput::placeholder {
+  color: var(--placeholder-color);
+  font-family: "Open-Sans-medium";
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.phoneLabel {
+  font-size: 16px;
+
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-rubik);
+  margin-bottom: 8px !important;
+}
+
+.labelDisabled {
+  color: #ababab;
+}
+
+.formContainer {
+  background: #ffffff !important;
+  box-shadow: -4px 4px 20px #00000029;
+  border-radius: 10px !important;
+  outline: none;
+  overflow: hidden;
+}

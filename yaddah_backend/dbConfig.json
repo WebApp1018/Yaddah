@@ -1,0 +1,33 @@
+{
+  "type": "db",
+  "SERVICE": "DB",
+  "PREVIOUS_DBS": [],
+  "COLLECTIONS": [
+    "appconfigs",
+    "bookings",
+    "categories",
+    "chats",
+    "cms",
+    "contactus",
+    "coupons",
+    "faqs",
+    "newsletters",
+    "notifications",
+    "products",
+    "packages",
+    "reports",
+    "revenues",
+    "rooms",
+    "services",
+    "sociallinks",
+    "staffs",
+    "transactions",
+    "users",
+    "venues",
+    "whychooseuscruds"
+  ],
+  "SOURCE_DB_NAME": "yaddahdb",
+  "TARGET_DB_NAME": "yadadmindb",
+  "SOURCE_DB_URL": "mongodb+srv://yaddahUser:anlB5EpcMYzpGNvh@cluster0.6wwoa.mongodb.net/yaddahdb?retryWrites=true&w=majority",
+  "TARGET_DB_URL": "mongodb+srv://yadadmindb:BFwOagoHSSIt1Tzo@cluster0.gb0pocq.mongodb.net/yadadmindb"
+}

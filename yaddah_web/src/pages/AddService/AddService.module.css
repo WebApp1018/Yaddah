@@ -1,0 +1,48 @@
+.main {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+}
+
+.loader {
+  min-height: calc(100vh - 140px);
+}
+
+.inputWrap {
+  row-gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonWrap {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.addMoreWrap {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0 5px 2px #0000000d;
+  cursor: pointer;
+}

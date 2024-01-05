@@ -1,0 +1,43 @@
+.loginBtn {
+    float: center;
+    background-color: var(--footer-color-dark);
+    color: var(--white-color);
+    background: transparent linear-gradient(90deg, #E65D90 0%, #654ACB 100%);
+    min-width: 200px
+}
+
+.jCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    row-gap: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addMoreWrap{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+  }
+  .cancel{
+    position: absolute;
+    right: 10px;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+  }
+
+  .desc{
+    position: relative;
+  }
+
+
+
+

@@ -1,0 +1,23 @@
+.addVenue_form h6 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.toggle_row {
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.toggle_row h6 {
+  margin-right: 10px;
+}
+
+.toggle_row div {
+  padding: 0;
+}
+
+.toggle_col {
+  display: flex;
+  justify-content: end;
+}

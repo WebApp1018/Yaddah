@@ -1,0 +1,89 @@
+.content__wrapper {
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    min-height: calc(100vh - 160px);
+}
+
+.__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.loader {
+    min-height: calc(100vh - 250px);
+}
+
+@media only screen and (max-width: 1120px) {
+    .headerRight {
+        width: 100%;
+    }
+}
+
+.__header h1 {
+    font-size: var(--fs-p-header-big) !important;
+}
+
+.__content {
+    margin-block-start: 2rem;
+}
+
+.notificationBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 20px #65656529;
+    border-radius: 1rem;
+    padding: 0px 1.5rem;
+    margin: 1rem 0px;
+    cursor: pointer;
+
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+}
+
+.notificationIcon {
+    height: 35px;
+    width: 35px;
+    background-color: #2FA5D138;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 1px solid #2FA5D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: #2FA5D1;
+}
+
+.notificatinText {
+    font-family: var(--ff-poppins-semibold);
+    font-size: 13px;
+}
+
+.time {
+    color: #B1B1B1;
+}
+
+.paginationDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px 20px 30px;
+}

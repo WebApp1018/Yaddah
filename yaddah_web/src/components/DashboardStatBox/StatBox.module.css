@@ -1,0 +1,39 @@
+.statBox {
+  padding: 2rem;
+  box-shadow: 0 0 20px #00000030;
+  max-height: 200px;
+  height: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 180px;
+  gap: 1rem;
+  align-items: center;
+}
+.statBox__img {
+  background-color: var(--bg);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statBox__desc p {
+  margin: 0;
+}
+.statBox__desc .statBox__title {
+  font-size: var(--fs-p-header-big);
+  color: var(--bg);
+}
+.statBox__sub {
+  text-transform: capitalize;
+}
+@media (max-width:1024px){
+.statBox {
+  padding:1.5rem 2rem;
+  min-height: 0px;
+}
+}

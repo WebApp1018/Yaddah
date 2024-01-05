@@ -1,0 +1,88 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainHeading h4 {
+  color: #000;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.mainDescription {
+  text-align: center;
+}
+
+.mainDescription p {
+  color: #000;
+  margin: 0;
+  font-size: 19px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.mainInner {
+  background-color: #fff;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.holdImg {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.btnContainer {
+  margin-top: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.btnContainer button:nth-child(1) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 880px) {
+  .mainInner {
+    width: 70%;
+  }
+  .mainDescription p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .mainInner {
+    width: 90%;
+  }
+  .mainDescription p {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .mainInner {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainInner {
+    width: 95%;
+  }
+  .mainDescription p {
+    width: 100%;
+    font-size: 17px;
+  }
+  .holdImg {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+}

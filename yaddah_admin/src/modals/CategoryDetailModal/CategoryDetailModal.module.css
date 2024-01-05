@@ -1,0 +1,49 @@
+.mainHead {
+  font-size: 18px;
+  font-family: "Poppins SemiBold";
+  color: var(--dashboard-main-color);
+  margin: 0px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 0;
+  width: 100%;
+  white-space: pre-wrap;
+  text-transform: capitalize;
+}
+
+.timeText {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 3px 0 5px 0;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.viewEventMain {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+
+.imgBox {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imgBox img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+
+}
+
+.rowGap {
+  row-gap: 20px;
+}

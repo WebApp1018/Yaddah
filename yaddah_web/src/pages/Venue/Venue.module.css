@@ -1,0 +1,82 @@
+.content__wrapper {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  min-height: calc(100vh - 160px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.loader {
+  min-height: calc(100vh - 200px);
+}
+
+.noData {
+  min-height: calc(100vh - 270px);
+}
+
+@media only screen and (max-width: 850px) {
+  .headerRight {
+    width: 100%;
+  }
+}
+
+.categoryCard__wrapper {
+  margin-top: 4rem;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+  .userCard__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 1rem;
+    margin-block-start: 1rem;
+  }
+
+  .content__wrapper {
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+    min-height: calc(100vh - 160px);
+  }
+
+  .headerRight .searchInput {
+    width: 100% !important;
+  }
+
+  .DownloadReport {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  .userCard__wrapper {}
+
+  .content__wrapper {
+    padding-block: 1.5rem;
+    padding-inline: 1rem;
+  }
+
+}

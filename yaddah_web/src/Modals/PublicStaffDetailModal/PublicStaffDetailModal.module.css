@@ -1,0 +1,175 @@
+.imgBox {
+  width: 250px;
+  height: 250px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+.itemListLabel {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  color: #000;
+  margin-right: 10px;
+}
+
+.itemListValue {
+  font-size: 15px;
+  color: #000;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.contactInfoHeading {
+  margin-top: 20px;
+}
+
+.disabledDates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.disabledDates div {
+  background-color: var(--clr-secondary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 10px 0;
+}
+
+.sp_div {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: var(--clr-primary);
+  padding: 5px 20px 20px;
+  position: relative;
+}
+
+.sp_div h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.bookNowDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bookNowDiv button {
+  width: 250px;
+  font-size: 24px;
+  transition: all 0.3s;
+}
+
+.bookNowDiv button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.changeViewButtonsButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.changeViewButtonsButtons div {
+  background-color: var(--clr-secondary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.changeViewButtonsButtons div svg {
+  color: #fff;
+}
+
+.schedulerLoaderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.paymentContainer {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.paymentContainer p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.paymentContainer p b {
+  color: var(--clr-primary);
+}
+
+.discountContainer {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.discountIconButton {
+  position: absolute !important;
+  top: 34px !important;
+  right: 4px !important;
+  background: var(--clr-primary) !important;
+  color: white !important;
+}
+
+@media (max-width: 750px) {
+  .imgBox {
+    height: 170px;
+    width: 170px;
+  }
+}
+@media (max-width: 600px) {
+  .imgBox {
+    height: 150px;
+    width: 150px;
+  }
+  .disabledDates div {
+    font-size: 13px;
+  }
+}

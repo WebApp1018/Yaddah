@@ -1,0 +1,39 @@
+.pricing__card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  --bg: var(--clr-secondary);
+  --bg-alpha: var(--clr-secondary-alpha);
+}
+.pricing__card__free {
+  --bg: var(--clr-primary) !important;
+  --bg-alpha: var(--clr-primary-alpha) !important;
+}
+.pricing__card__btn {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--bg);
+}
+.pricing__card__content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 20px var(--bg-alpha);
+  border-radius: 1rem;
+  border: 2px solid var(--bg-alpha);
+}
+
+.pricing__card__content p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: var(--bg);
+  text-transform: uppercase;
+}
+.pricing__card__price {
+  border-inline-start: 2px solid #00000030;
+}

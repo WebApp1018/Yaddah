@@ -1,0 +1,19 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer div {
+  text-align: center;
+}
+.mainContainer p {
+  width: 80%;
+  margin: 0 auto 16px auto;
+  margin-bottom: 20px;
+
+}
+.mainContainer h2{
+  font-size: var(--fs-h1-big);
+  margin-bottom: 20px;
+}

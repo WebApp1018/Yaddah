@@ -1,0 +1,93 @@
+.profileSetting__wrapper {
+  padding: 3rem;
+}
+
+.profileSetting__wrapper h1 {
+  font-size: var(--fs-p-header-big) !important;
+}
+
+.profileSetting__wrapper h3 {
+  margin-top: 15px;
+}
+
+.boxShadow__wrapper {
+  box-shadow: 0 0 10px #00000030;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  height: 100%;
+  min-height: calc(100vh - 290px);
+  position: relative;
+  /* overflow: auto; */
+}
+
+.input__wrapper {
+  margin-top: 1rem;
+}
+
+.input__wrapper input {
+  background-color: var(--white-color);
+  border: none;
+  box-shadow: -4px 4px 20px #00000029;
+}
+
+.input__wrapper label {
+  /* background-color: blue; */
+  font-family: var(--ff-poppins-semibold);
+}
+
+.input__wrapper p {
+  /* background-color: blue; */
+  font-size: 16px !important;
+  font-family: var(--ff-poppins-semibold);
+}
+
+.profilePic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.saveBtn {
+  width: 100%;
+  background-color: var(--clr-secondary);
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profileSetting__wrapper h3 {
+    margin-top: 15px;
+    font-size: 17px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .boxShadow__wrapper {
+    height: 1000px;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .profileSetting__wrapper {
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+  }
+
+  .boxShadow__wrapper {
+    margin: 1.5rem 0;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  .profileSetting__wrapper {
+    padding-inline: 1rem;
+  }
+
+  .boxShadow__wrapper {
+    margin: 1rem 0;
+  }
+}

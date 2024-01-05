@@ -1,0 +1,7 @@
+extends baseEmail
+
+block content
+  p Hi #{payload.firstName},
+  p Your booking has been confirmed, you can click on the following link to view your booking details.
+  p #{payload.bookingLink}
+  p - Yaddah

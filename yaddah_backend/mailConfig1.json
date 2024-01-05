@@ -1,0 +1,5 @@
+{
+  "SERVICE": "POSTMARK",
+  "EMAIL_FROM": "pr@yaddah.net",
+  "POSTMARK_KEY": "0f60fb5c-5ea1-4941-a54d-3515123bc"
+}

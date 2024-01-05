@@ -1,0 +1,46 @@
+/* Category Card */
+.category__card {
+  box-shadow: 0 0 10px #00000020;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  align-content: center;
+}
+.padding__normal {
+  padding: 1rem 1rem 2rem;
+}
+.category__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: var(--clr-200);
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+  transition: 200ms background-color ease-in;
+  border-radius: 0 0 30px 30px;
+}
+.category__card:hover::before {
+  background-color: var(--clr-secondary);
+}
+.category__card h3 {
+  transition: 200ms color ease-in;
+}
+.category__card:hover h3:not(.title__below) {
+  color: var(--clr-font-inverted);
+}
+.category__card img {
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  justify-self: center;
+}
+.card__btn {
+  justify-self: center;
+}

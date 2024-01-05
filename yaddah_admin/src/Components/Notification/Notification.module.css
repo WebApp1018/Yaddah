@@ -1,0 +1,48 @@
+.notification__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.notification__wrapper:not(:last-child) {
+  margin-block-end: 2rem;
+}
+
+.notification__wrapper:not(:last-child)::before {
+  content: "";
+  height: 100%;
+  width: 27px;
+  left: 0;
+  border-right: 3px dashed #00000030;
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+}
+
+.notification__wrapper p {
+  margin: 0;
+}
+
+.notification__time {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.notification__icon {
+  background-color: #e5f4f9;
+  padding: 0.5rem;
+  border: 2px solid #2fa5d1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2fa5d1;
+  font-weight: 800;
+}

@@ -1,0 +1,65 @@
+.banner__section {
+  padding-block: 20px;
+}
+
+.container {
+  max-width: 660px;
+  margin-block: 70px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: -4px 4px 20px #00000029;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+
+.row {
+  row-gap: 25px;
+}
+
+.row h1 {
+  text-align: center;
+  color: var(--clr-secondary);
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.dontHaveAnAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.dontHaveAnAccount p {
+  margin-bottom: 0px;
+}
+
+.dontHaveAnAccount a {
+  color: #0d6efd !important;
+  text-decoration: none;
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 90%;
+    padding: 40px 20px;
+  }
+}

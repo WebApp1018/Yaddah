@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+}
+
+
+.header[data-show-notification=true]::before {
+
+  content: attr(data-notification);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 15px;
+  border: 2px solid currentColor;
+  width: 20px;
+  height: 20px;
+  color: var(--clr-font-inverted);
+  border-radius: 50%;
+  background-color: var(--clr-secondary);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.headerNotification {
+  position: absolute;
+  right: 100%;
+  top: 100%;
+  background-color: var(--clr-font-inverted);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00000030;
+  min-width: 600px;
+  height: 400px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.headerNotification ul {
+  list-style: none;
+}
+
+.header>svg {
+  fill: var(--clr-font-inverted);
+  font-size: 2rem;
+  position: relative;
+}
+
+.notificationSkelton {
+  margin-bottom: 10px;
+
+}

@@ -1,0 +1,110 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.labelText {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-rubik);
+  font-size: var(--fs-base);
+  margin-bottom: 8px;
+}
+
+.inputBox {
+  height: 100%;
+  padding: 15px 16px;
+  width: 100%;
+}
+
+.noBorder {
+  border: none;
+}
+
+.inputPassContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  border: none;
+}
+
+.inputPassContainer input {
+  font-family: var(--ff-rubik);
+  font-size: 16px;
+  color: var(--text-color-black);
+  letter-spacing: 1.4px;
+  border-radius: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.inputPassContainer input::placeholder {
+  color: var(--placeholder-color);
+  font-family: var(--ff-rubik);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.inputPassContainer .passwordIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  color: var(--clr-secondary);
+  font-size: 20px;
+}
+
+.errorText {
+  color: red;
+}
+
+.disabled {
+  background-color: #00000010 !important;
+  cursor: not-allowed !important;
+  opacity: 0.5;
+  border: 1px solid #00000050;
+}
+
+.leftIconBox {
+  height: max-content;
+  margin-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  Firefox  */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.formInput {
+  background: #ffffff !important;
+  box-shadow: -4px 4px 20px #00000029;
+  border-radius: 10px !important;
+  border: 0 !important;
+  padding: 15.5px 16px !important;
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .labelText {
+    font-size: 20px;
+  }
+
+  .inputBox {
+    padding: 12px;
+  }
+
+  .inputPassContainer input {
+    font-size: 15px;
+  }
+}

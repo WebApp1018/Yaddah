@@ -1,0 +1,21 @@
+.searchBar__wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.searchBar__header {
+  font-size: var(--fs-h3-header-small);
+}
+.searchBar__input {
+  margin-inline-start: auto;
+  border-radius: 0.5rem;
+  background-color: var(--clr-200);
+  border: none;
+  padding: 1rem;
+}
+.searchBar__btn {
+  background-color: var(--clr-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--clr-font-inverted);
+}

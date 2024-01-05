@@ -1,0 +1,76 @@
+.mainHead {
+  font-size: 18px;
+  font-family: "Poppins SemiBold";
+  color: var(--dashboard-main-color);
+  margin-bottom: 5px;
+  flex-shrink: 0;
+}
+
+.row {
+  row-gap: 5px;
+}
+
+.row h4 {
+  margin-block: 10px;
+}
+
+.text {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 3px 0 5px 0;
+  width: 100%;
+  white-space: pre-wrap;
+  text-transform: capitalize;
+  word-break: break-all;
+}
+.linkText {
+  cursor: pointer;
+  color: #007bff !important;
+}
+
+.timeText {
+  font-size: 16px !important;
+  color: var(--text-color-black);
+  margin: 3px 0 5px 0;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.viewEventMain {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.imgBox {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.btnWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  width: 200px;
+}
+
+.activeBtn {
+  background-color: var(--clr-secondary);
+  color: var(--clr-font-inverted);
+  font-family: var(--ff-poppins-semibold);
+  border: none;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}

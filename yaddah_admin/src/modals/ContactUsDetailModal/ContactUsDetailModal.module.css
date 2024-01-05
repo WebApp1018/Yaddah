@@ -1,0 +1,16 @@
+.main {
+  padding: 20px 40px;
+}
+
+.main p {
+  font-size: 18px;
+}
+
+.main p b {
+  color: var(--clr-primary);
+  font-size: 20px;
+}
+
+.main p a {
+  text-decoration: none;
+}

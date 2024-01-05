@@ -1,0 +1,92 @@
+.contactUs__section {
+  padding: 3rem;
+}
+.contact__container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.contactRow {
+  row-gap: 30px;
+  justify-content: center;
+}
+.contact__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  transition: transform ease-out 150ms;
+  z-index: 1;
+  border: 1px solid var(--clr-secondary);
+  min-height: 300px;
+}
+.contact__card:before {
+  content: "";
+  background-color: var(--clr-secondary);
+  position: absolute;
+  inset: -1.5px;
+  bottom: -7px !important;
+  height: calc(100% + 10px);
+  width: calc(100% + 2px);
+  border-radius: 1rem;
+  z-index: -2;
+  transition: transform ease-out 150ms;
+}
+.contact__card:after {
+  content: "";
+  background-color: var(--clr-font-inverted);
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: -2;
+}
+.contact__card:hover {
+  transform: translateY(-10px);
+  z-index: 10;
+}
+.contact__card:hover:before {
+  transform: translateY(20px);
+}
+.contact__card svg {
+  font-size: 100px;
+  width: 230px;
+  fill: var(--clr-secondary);
+  margin-inline: auto;
+  margin-block-end: 1rem;
+}
+.contact__card p {
+  margin: 0px;
+}
+.contact__form {
+  padding-top: 4rem;
+}
+.inputCol {
+  margin-bottom: 16px;
+}
+.phone input {
+  min-height: 46px !important;
+}
+.sendMsgBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .contactUs__section {
+    padding: 2rem 0;
+  }
+}
+@media (max-width:520px){
+  .contact__card {
+    padding:1rem;
+  }
+  .contact__card svg {
+    width:70px;
+    height:70px
+  }
+}

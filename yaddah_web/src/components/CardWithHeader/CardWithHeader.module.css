@@ -1,0 +1,113 @@
+/* Category Card */
+.category__card {
+  box-shadow: 0 0 10px #00000020;
+  padding: 4rem 3rem;
+  padding-bottom: 2rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  align-content: center;
+  height: 518px;
+}
+
+.padding__normal {
+  padding: 1rem 1rem 2rem;
+}
+
+.category__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: var(--clr-200);
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+  transition: 200ms background-color ease-in;
+  border-radius: 0 0 30px 30px;
+}
+
+.category__card:hover::before {
+  background-color: var(--clr-secondary);
+}
+
+.category__card h3 {
+  transition: 200ms color ease-in;
+  text-transform: capitalize;
+}
+
+.category__card .para_b {
+  margin-bottom: 0px !important;
+  height: 45px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width: 100%;
+  text-align: center;
+  /* color: var(--clr-font-inverted); */
+}
+
+.category__card:hover h3:not(.title__below) {
+  color: var(--clr-font-inverted);
+}
+
+.category__card img {
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  justify-self: center;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  height: 260px;
+  object-position: center center;
+  background-color: var(--placeholder-color);
+}
+
+.card__btn {
+  justify-self: center;
+}
+
+@media (max-width: 450px) {
+  .category__card {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+
+.spBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 187px;
+  width: 450px;
+  z-index: 99;
+  overflow: hidden;
+}
+.spBadge:before {
+  content: attr(data-badge);
+  position: absolute;
+  left: 0;
+  padding: 0.2rem 0;
+  width: 100%;
+  transform: rotate(-45deg) translate(-32%, -67px);
+  color: var(--clr-font-inverted);
+  text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
+}
+.spBadge[data-badge="top rated"]:before {
+  background-color: crimson;
+}
+.spBadge[data-badge="preferred"]:before {
+  background-color: darkcyan;
+}

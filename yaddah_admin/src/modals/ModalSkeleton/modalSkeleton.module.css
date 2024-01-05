@@ -1,0 +1,71 @@
+.modal {
+  border-radius: 20px;
+}
+
+.header {
+  padding: 20px;
+  background-color: var(--clr-secondary) !important;
+  color: black !important;
+  position: static;
+}
+
+.header p {
+  color: var(--white-color);
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.header button {
+  padding: 0px !important;
+  margin: 0px !important;
+  right: 27px;
+  top: 27px;
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat !important;
+}
+
+.header button:hover {
+  opacity: 1;
+  box-shadow: unset;
+}
+
+.footer {
+  padding: 16px 32px;
+}
+
+.body {
+  padding: 32px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.iconBox {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  z-index: 10;
+  transform: translateY(100%);
+}
+
+.iconBox svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.body::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: #e5e5e5;
+}
+
+.body::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: var(--clr-secondary);
+  border-radius: 5px;
+}

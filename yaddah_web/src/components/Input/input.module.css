@@ -1,0 +1,72 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelText {}
+
+.formInput {
+  background: #ffffff;
+  box-shadow: -4px 4px 20px #00000029;
+  border-radius: 10px !important;
+  border: 0 !important;
+  padding: 17.5px 16px !important;
+}
+
+.inputBox {
+  border: 1px solid var(--clr-border);
+  border-radius: 5px;
+  height: 100%;
+  padding: 12px 16px 12px 16px;
+  width: 100%;
+  font-family: var(--ff-rubik);
+}
+
+.inputBox::placeholder {
+  font-family: var(--ff-rubik);
+  color: var(--placeholder-color);
+}
+
+.noBorder {
+  border: 0px solid #e5e5e5;
+}
+
+.inputPassContainer {
+  display: flex;
+  position: relative;
+}
+
+.inputPassContainer>svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.errorText {}
+
+.disabled {}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  Firefox  */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.leftIconBox {
+  height: max-content;
+  margin-left: 10px;
+  /* position: absolute;
+  left: 20px;
+  top: 55%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content; */
+}

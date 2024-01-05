@@ -1,0 +1,34 @@
+.fileUpload {
+  background: #ffffff;
+  box-shadow: -4px 4px 20px #00000029;
+  border-radius: 10px !important;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 16px;
+  padding-block: 2px;
+}
+
+.fileUpload p {
+  margin: 0px;
+}
+
+.fileUpload p[color=""] {
+  color: var(--placeholder-color);
+}
+
+.btn {
+  padding-block: 9px;
+}
+
+.label {
+  font-size: 16px;
+  font-family: var(--ff-rubik);
+  margin-bottom: 8px;
+}
+.subLabel {
+  font-size: 12px;
+  font-family: var(--ff-rubik);
+  color: var(--clr-font);
+}

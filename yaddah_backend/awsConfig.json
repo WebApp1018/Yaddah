@@ -1,0 +1,14 @@
+{
+  "type": "s3",
+  "AWS_BUCKET_REGION": "us-east-2",
+  "AWS_ACCESS_KEY": "DO00V94424T838Q6UGZ3",
+  "AWS_SECRET_KEY": "MDOZQTJBcLkMR2QJlteR4FmH/Y+797F9PHhBAIQ8iFk",
+  "AWS_VIDEO_BUCKET_LINK": "https://yaddah-bucket.s3.us-east-2.amazonaws.com/",
+  "AWS_USERNAME": "yaddah-user",
+  "AWS_IMAGE_BUCKET_NAME": "yaddah-bucket",
+  "AWS_ENDPOINT": "nyc3.digitaloceanspaces.com",
+  "isSelect": false,
+  "_id": "642c1fd60ac19b6548166f75",
+  "updatedAt": "2023-04-04T13:02:14.273Z",
+  "createdAt": "2023-04-04T13:02:14.273Z"
+}

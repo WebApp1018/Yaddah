@@ -1,0 +1,119 @@
+.banner__section {
+  padding-block: 3rem;
+  padding-block-end: 8rem;
+  background-color: var(--clr-200);
+  overflow: hidden;
+}
+.banner__section h1 span {
+  color: var(--clr-primary);
+  font-size: var(--fs-h1-header);
+  display: block;
+  font-family: var(--ff-poppins-semibold);
+}
+.banner__section h1 {
+  font-size: var(--fs-h1-sub);
+  font-family: var(--ff-poppins-italic);
+}
+.banner__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.banner__image {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__subject {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.banner__accent {
+  position: absolute;
+  z-index: 0;
+}
+/* Category Section */
+.category__section {
+  padding-block: 50px;
+}
+.category__section h2 span {
+  color: var(--clr-primary);
+  font-family: var(--ff-poppins-semibold);
+}
+.category__section h2 {
+  font-size: var(--fs-h2-header);
+  font-family: var(--ff-poppins-italic);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* Search Bar Component */
+.search__bar {
+  display: flex;
+}
+.search__bar button {
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0px 10px 10px 0px;
+  color: var(--clr-font-inverted);
+}
+.search__bar .input__div {
+  background-color: var(--clr-font);
+  border-radius: 10px 0px 0px 10px;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.search__bar input,
+.search__bar select {
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+  border: 0px;
+  border-bottom: 1px solid #ffffff30;
+  color: var(--clr-font-inverted);
+}
+.categories{
+  cursor: pointer;
+}
+.images{
+  margin-bottom: 50px;
+  overflow-x: clip;
+}
+@media screen and (max-width:1366px){
+.banner__accent {
+  max-width: 650px;
+}
+}
+@media screen and (max-width:991px){
+.banner__content {
+  text-align: center;
+}
+.search__bar {
+  width:100%;
+  max-width: 768px;
+  margin-left:auto;
+  margin-right: auto;
+}
+.search__bar .input__div, 
+.search__bar input{
+  flex:1;
+}
+}
+
+@media (max-width:450px) {
+  .banner__content h1{
+    font-size: 45px !important;
+  }
+  .banner__content h1 span{
+    font-size: 45px !important;
+  }
+}

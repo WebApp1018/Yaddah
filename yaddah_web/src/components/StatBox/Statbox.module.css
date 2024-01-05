@@ -1,0 +1,30 @@
+/* stat Box */
+.statBox__wrapper {
+  text-align: center;
+}
+.statBox__header {
+  font-size: var(--fs-h1-header);
+  margin: 0;
+}
+.statBox__desc {
+  font-size: var(--fs-p-header-big);
+  text-transform: capitalize;
+  margin: 0;
+}
+@media (min-width:992px){
+  .statBox__wrapper:not(:last-child) {
+    border-right: 2px solid #ffffff50;
+  }
+}
+@media (min-width:541px){
+  .statBox__wrapper:not(:nth-child(even)) {
+    border-right: 2px solid #ffffff50;
+  }
+}
+
+@media (max-width:450px) {
+  .statBox__header{
+    font-size: 40px !important;
+  }
+  
+}

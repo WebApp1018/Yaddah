@@ -1,0 +1,41 @@
+.mainContainer {
+  margin: 50px 0 100px 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add_imageCom_main {
+  margin: 30px 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer {
+  margin-top: 1.5rem;
+}
+
+.buttonContainer button {
+  width: 206px;
+}
+
+
+.imageBoxContainer {
+  margin-top: 1.5rem;
+}
+
+.imageBoxContainer label {
+  margin-bottom: 0.5rem;
+}
+
+.loader {
+  min-height: calc(100vh - 128px);
+}

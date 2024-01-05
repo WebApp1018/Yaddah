@@ -1,0 +1,4 @@
+.MuiPagination-ul li .Mui-selected {
+  background-color: var(--clr-secondary);
+  color: var(--clr-font-inverted);
+}

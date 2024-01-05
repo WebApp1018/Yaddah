@@ -1,0 +1,43 @@
+
+.container{
+    padding-top: 80px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.main{
+    height: 100% ;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 11px;
+}
+.img{
+width: 150px;
+height: 150px;
+border-radius: 50% ;
+margin-top:-80px;
+overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+
+}
+.subHead{
+    font-family: "Poppins SemiBold";
+  }
+
+  .loc{
+    color: #686868;
+  }
+
+  .activeItem {
+    border: 3px solid var(--clr-primary);
+  }
+  

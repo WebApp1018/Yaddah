@@ -1,0 +1,7 @@
+extends baseEmail
+
+block content
+  p Hi #{payload.firstName},
+  p Your account verification has been rejected.
+  p Reason: #{payload.reason}.
+  p - Yaddah

@@ -1,0 +1,29 @@
+.radioWithLabel {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.radioWithLabel label {
+  line-height: 1;
+  margin-left: 14px;
+  
+}
+.label{
+  font-family: var(--ff-rubik);
+}
+
+.radioInput {
+  accent-color: var(--clr-secondary);
+  width: 20px;
+  height: 20px;
+}
+.radioInput:checked{
+  accent-color: var(--clr-secondary);
+}
+.labelDisabled {
+  color: #dddddd;
+}
+
+.labelChecked {
+}
+

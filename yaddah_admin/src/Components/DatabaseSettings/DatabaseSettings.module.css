@@ -1,0 +1,17 @@
+.dbSettings h3 {
+  font-size: var(--fs-h3-header-small);
+}
+
+.dbSettings h3 a {
+  color: blue !important;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  width: 300px;
+}

@@ -1,0 +1,14 @@
+{
+  "type": "payment",
+  "MODE": "sandbox",
+  "SERVICE": "PAYPAL",
+  "CLIENT_ID_SANDBOX": "Ac2qgqPAnyB8mpWrOfz8Tn-BALo1bJDLujliJFPXJtGCkHE2KPovETQ_CpEBIAlNF78B4BlP-oJN9Aid",
+  "APP_SECRET_SANDBOX": "EI25OVn7wviMQOK9KrtOrBBmu58O3gjdSjZigCLFgtdoX7ludaSirkVFXx6bt8GfQDRguEy9-ROGoH7s",
+  "CLIENT_ID_LIVE": "Ac2qgqPAnyB8mpWrOfz8Tn-BALo1bJDLujliJFPXJtGCkHE2KPovETQ_CpEBIAlNF78B4BlP-oJN9Aid",
+  "APP_SECRET_LIVE": "EI25OVn7wviMQOK9KrtOrBBmu58O3gjdSjZigCLFgtdoX7ludaSirkVFXx6bt8GfQDRguEy9",
+  "PAYPAL_WEBHOOK_ID": "00G381059Y0944500",
+  "isSelect": false,
+  "_id": "6434eb7a7598d949eca40d82",
+  "updatedAt": "2023-04-11T05:09:14.239Z",
+  "createdAt": "2023-04-11T05:09:14.239Z"
+}

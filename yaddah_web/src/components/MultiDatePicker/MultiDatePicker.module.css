@@ -1,0 +1,25 @@
+.pickerDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelText {}
+
+.disabled {}
+
+.pickerDiv input {
+    background: #ffffff;
+    box-shadow: -4px 4px 20px #00000029;
+    border-radius: 10px;
+    border: 0 !important;
+    padding: 22px 16px !important;
+    width: 100%;
+    font-family: var(--ff-rubik);
+    min-height: 54px;
+}
+
+.pickerDiv input:focus {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: -4px 4px 20px #00000029;
+}

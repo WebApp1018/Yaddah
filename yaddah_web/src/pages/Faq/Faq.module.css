@@ -1,0 +1,71 @@
+.faq__section {
+  padding-block: 2rem;
+}
+.faq__accordian {
+  padding: 2rem;
+  box-shadow: 0 0 10px #00000030;
+  border-radius: 1rem;
+  height: 100%;
+}
+.faq__query {
+  padding: 2rem;
+  background-color: var(--clr-secondary);
+  border-radius: 1rem;
+  height: 100%;
+}
+.faq__accordian p,
+.faq__query p {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #00000050 !important;
+  margin-bottom: 2rem;
+}
+.accordian__header {
+  font-size: var(--fs-p-header-big);
+}
+.faq__query .accordian__header {
+  color: var(--clr-font-inverted);
+  border-color: currentColor !important;
+}
+.accordian__item {
+  border: 2px solid #00000050 !important;
+  border-radius: 1rem !important;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+}
+.accordianHeader {
+  border-bottom: 1px solid #00000052;
+}
+.accordian button {
+  background-color: transparent !important;
+  color: var(--clr-font) !important;
+  font-weight: 700;
+}
+.accordian button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.input {
+  margin: 1rem 0px;
+}
+.phoneInput {
+  margin: 1rem 0px;
+  border-radius: 10px;
+}
+
+.faq__query form {
+  display: grid;
+}
+.faq__query input,
+.faq__query textarea {
+  padding: 1rem;
+  border-radius: 10px;
+}
+.faq__query button {
+  background-color: var(--clr-font-inverted);
+  color: var(--clr-secondary);
+  justify-self: center;
+}
+.sectionCol {
+  margin-bottom: 24px;
+}

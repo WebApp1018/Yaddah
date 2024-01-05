@@ -1,0 +1,13 @@
+.banner__section {
+  padding-block: 3rem;
+  text-align: center;
+  background-color: var(--clr-primary);
+  color: var(--clr-font-inverted);
+}
+.banner__section h1 {
+  font-family: var(--ff-poppins-italic);
+  font-size: var(--fs-h2-header);
+}
+.banner__section h1 span {
+  font-family: var(--ff-poppins-semibold);
+}

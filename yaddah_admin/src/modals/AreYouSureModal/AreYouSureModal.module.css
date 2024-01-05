@@ -1,0 +1,115 @@
+.content {}
+
+.content h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.btnsBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.yesBtn {
+  /* background-color: var(--primary-color); */
+  /* padding: 10px 45px; */
+  min-width: 100px;
+}
+
+.noBtn {
+  /* background-color: var(--dashboard-text-color); */
+  /* padding: 10px 45px; */
+  margin-left: 30px;
+  min-width: 100px;
+}
+
+/* For Header */
+.iconDiv {
+  margin-bottom: 6px;
+}
+
+.modalHeader {
+  padding: 0px;
+}
+
+.headingText {
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.message {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dashboard-text-color);
+}
+
+.aCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+/* .content {}
+
+.content h4 {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Open-Sans-regular';
+}
+
+.btnsBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.yesBtn {
+  background-color: green;
+  min-width: 90px;
+}
+
+.noBtn {
+  background-color: red;
+  min-width: 90px;
+}
+
+.iconDiv {
+  margin-bottom: 6px;
+}
+
+.modalHeader {
+  padding: 0px;
+}
+
+.header {
+
+  font-size: 32px;
+  color: var(--white-color);
+  font-family: 'Open-Sans-bold';
+}
+
+.aCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+} */

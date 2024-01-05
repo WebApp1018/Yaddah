@@ -1,0 +1,21 @@
+.mainContainer {
+  max-width: 60%;
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.mainContainer>div {
+  width: 100%;
+}
+
+.mainContainer>div>div {
+  min-width: 100%;
+}
+
+@media screen and (max-width:425px) {
+  .mainContainer {
+    max-width: 100%;
+  }
+}

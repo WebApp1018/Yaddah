@@ -1,0 +1,110 @@
+.header {
+  background-color: var(--clr-200);
+  padding-block: 0.5rem;
+  position: sticky;
+  z-index: 200;
+  top: 0;
+  background-color: var(--clr-200);
+  box-shadow: 0 0 4px #00000030;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.navbarLinks {
+  text-transform: uppercase;
+  font-family: var(--ff-rubik);
+  font-size: 16px;
+  color: var(--text-color-black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navActive {
+  color: var(--clr-primary) !important;
+}
+
+.navbar__button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.serviceProviderBtn {
+  background-color: transparent !important;
+  border: 2px solid var(--clr-secondary) !important;
+  color: var(--text-color-black) !important;
+  padding: 16px !important;
+}
+
+.profileOverlay {
+  width: 100%;
+  /* top: 100px !important; */
+  display: flex;
+  justify-content: center;
+  transform: none !important;
+  /* inset: 93px auto auto -301px !important; */
+  z-index: 201;
+  position: fixed !important;
+}
+
+.profileOverlay > div {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 4px 0px #0000004a;
+  padding: 12px 12px 12px 12px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 3;
+}
+
+.overlayLink {
+  font-size: 18px !important;
+  color: var(--main-color) !important;
+  padding: 2px 12px 1px 12px !important;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* font-family: "Bebas-Neue-regular"; */
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.loginBtn {
+  padding: 16px 32px !important;
+}
+
+.logoDiv {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.logoDiv img {
+  width: 100%;
+}
+
+.imgDiv {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+}

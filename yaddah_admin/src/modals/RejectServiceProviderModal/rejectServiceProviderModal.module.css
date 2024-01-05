@@ -1,0 +1,17 @@
+.btn {
+    float: center;
+    min-width: 200px
+}
+
+.jCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    row-gap: 20px;
+}
+
+.textArea {
+    outline: none;
+}

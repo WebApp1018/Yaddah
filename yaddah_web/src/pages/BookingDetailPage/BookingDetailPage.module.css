@@ -1,0 +1,150 @@
+.main{
+ max-width: 85%;
+}
+.bookingStrip {
+  background-color: var(--clr-primary);
+  padding: 30px 0;
+}
+
+.bookingStrip h3 {
+  color: #fff;
+  text-align: center;
+}
+
+/* renderServiceDetail */
+.renderServiceDetail {
+}
+
+.imgBox {
+  width: 100%;
+  height: 600px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactInfoHeading {
+  margin-top: 20px;
+}
+
+/* Item List */
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 10px;
+}
+.itemListLabel {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  color: #000;
+  margin-right: 10px;
+}
+
+.itemListValue {
+  font-size: 15px;
+  color: #000;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.imgBoxProfile {
+  width: 250px;
+  height: 250px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.imgBoxProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width:1400px) {
+  .imgBox {
+    height: 500px;
+  }
+  .imgBoxProfile {
+    width: 200px;
+    height: 200px;
+   
+  }
+  
+}
+@media (max-width:1200px) {
+  .imgBox {
+    height: 420px;
+  }
+  .imgBoxProfile {
+    width: 170px;
+    height: 170px;
+   
+  }
+  
+}
+@media (max-width:990px) {
+  .imgBox {
+    height: 350px;
+  }
+  .imgBoxProfile {
+    width: 140px;
+    height: 140px;
+   
+  }
+  
+}
+@media (max-width:700px) {
+  .imgBox {
+    height: 300px;
+  }
+  .imgBoxProfile {
+    width: 120px;
+    height: 120px;
+   
+  }
+  
+}
+@media (max-width:500px) {
+  .imgBox {
+    height: 250px;
+  }
+  .imgBoxProfile {
+    width: 120px;
+    height: 120px;
+   
+  }
+  .main{
+    max-width: 90%;
+   }
+   .qrCode{
+    height: 100px;
+    width: 100px;
+   }
+  
+}
+@media (max-width:400px) {
+  
+  .main{
+    max-width: 96%;
+   }
+  
+}

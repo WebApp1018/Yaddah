@@ -1,0 +1,32 @@
+.banner__section {
+  padding-block: 20px;
+}
+
+.services__section {
+  padding-bottom: 4rem;
+}
+
+.mt5 {
+  margin-top: 5rem;
+}
+
+.tabsSection {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  min-height: calc(100vh - 500px);
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}

@@ -1,0 +1,164 @@
+.content__wrapper {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  min-height: calc(100vh - 150px);
+  /* height: 100vh; */
+}
+.__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 880px) {
+  .headerRight {
+    width: 100%;
+  }
+}
+
+.listToggle {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.listToggle button {
+  width: 130px;
+}
+
+.userCard__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-block-start: 2rem;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+
+.__content {
+  margin-block-start: 1rem;
+}
+
+.__content thead tr,
+.__content tbody tr {
+  position: relative;
+}
+.__content thead tr th {
+  color: var(--clr-font-inverted);
+}
+.__content thead tr th,
+.__content tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+  padding-block: 2rem;
+  white-space: nowrap;
+  background: transparent;
+}
+.__content thead tr th:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--clr-primary);
+  width: 100%;
+  height: calc(100% - 1rem);
+  inset: 0;
+  margin-block: auto;
+  border-radius: 1rem;
+}
+.__content tbody tr td:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--clr-font-inverted);
+  width: 100%;
+  height: calc(100% - 1rem);
+  inset: 0;
+  margin-block: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #00000030;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+
+.userCard__badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 270px;
+  z-index: -1;
+  overflow: hidden;
+}
+.userCard__badge:before {
+  content: attr(data-badge);
+  position: absolute;
+  left: 0;
+  padding: 0.2rem 0;
+  width: 100%;
+  transform: rotate(-45deg) translate(-32%, -67px);
+  color: var(--clr-font-inverted);
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+}
+.userCard__badge[data-badge="top rated"]:before {
+  background-color: crimson;
+}
+.userCard__badge[data-badge="preferred"]:before {
+  background-color: darkcyan;
+}
+
+.userCard__button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userCard__button {
+  background-color: var(--clr-primary) !important;
+  color: var(--clr-font-inverted);
+  font-family: var(--ff-poppins-semibold);
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+}
+.userCard__button__bordered {
+  background-color: transparent !important;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary) !important;
+  width: 120px;
+}
+
+.image__wrapper {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.loader {
+  min-height: calc(100vh - 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

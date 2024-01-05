@@ -1,0 +1,183 @@
+.content__wrapper {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+}
+
+.discount__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount__header h1 {
+  font-size: var(--fs-h3-header-small);
+}
+
+.discount__header button {
+  background-color: var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--clr-font-inverted);
+  border: none;
+}
+
+.discount__content__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Discount Card */
+.discount__card {
+  --padding: 2rem;
+  display: flex;
+  position: relative;
+  padding: var(--padding) var(--padding);
+  background-color: var(--clr-font-inverted);
+  border: 2px dashed var(--clr-secondary-alpha);
+  border-radius: 0.2rem;
+  transition: 200ms ease-in background-color, 200ms ease-in color;
+}
+
+.discount__card:hover {
+  background-color: var(--clr-secondary);
+  color: var(--clr-font-inverted);
+}
+
+.coupon__price {
+  position: relative;
+}
+
+.coupon__price:before,
+.coupon__price:after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-font-inverted);
+  height: 35px;
+  width: 60px;
+  left: -25px;
+}
+
+.coupon__price:after {
+  top: calc(-2px - var(--padding));
+  border-radius: 0 0 50% 50%;
+  border: 2px dashed var(--clr-secondary-alpha);
+  border-top: none;
+}
+
+.coupon__price:before {
+  bottom: calc(-2px - var(--padding));
+  border-radius: 50% 50% 0 0;
+  border: 2px dashed var(--clr-secondary-alpha);
+  border-bottom: none;
+}
+
+.coupon___desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coupon___desc .__header {
+  font-size: var(--fs-h3-header);
+  color: var(--clr-primary);
+}
+
+.coupon___desc .__btn__wrapper {
+  display: flex;
+  gap: 1rem;
+  --bg: var(--clr-primary);
+}
+
+.coupon___desc .__btn {
+  border-color: transparent;
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: var(--clr-font-inverted);
+  transition: 200ms all ease-in;
+}
+
+.discount__card:hover .coupon___desc .__btn {
+  background-color: var(--clr-font-inverted);
+  color: var(--clr-font);
+}
+
+.coupon___desc .__btn.__btn__bordered {
+  border-color: #00000060;
+  border-style: solid;
+  background-color: var(--clr-200);
+  color: var(--clr-font);
+}
+
+.discount__card:hover .coupon___desc .__btn.__btn__bordered {
+  border-color: transparent;
+}
+
+.coupon__price {
+  padding: 1rem;
+}
+
+.coupon__price .__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  background-color: var(--clr-primary);
+  color: var(--clr-font-inverted);
+  transition: 200ms background-color ease-in, 200ms color ease-in;
+  padding: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.coupon__price .__content span:first-child {
+  font-size: var(--fs-h3-header-small);
+}
+
+.discount__card:hover .coupon__price .__content {
+  background-color: var(--clr-font-inverted);
+  color: var(--clr-primary);
+}
+
+.discount__card .edit__btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.2rem;
+  background-color: transparent;
+  color: var(--clr-secondary);
+  border: none;
+  font-size: 1.3rem;
+  flex: 0;
+  transition: 200ms color ease-in;
+}
+
+.discount__card:hover .edit__btn {
+  color: var(--clr-font-inverted);
+}
+
+.discount__card:hover .__header {
+  color: var(--clr-font-inverted);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #AFAFAF;
+}
+
+.discount__card:hover .date {
+  color: var(--clr-font-inverted);
+}
+
+.loader {
+  min-height: calc(100vh - 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

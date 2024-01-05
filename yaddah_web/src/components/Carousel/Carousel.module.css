@@ -1,0 +1,16 @@
+.box {
+  padding: 30px !important;
+}
+
+.logosContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-basis: 16.6%;
+}
+
+
+
+
+
+

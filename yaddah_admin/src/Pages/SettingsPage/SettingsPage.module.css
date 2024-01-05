@@ -1,0 +1,14 @@
+.content__wrapper {
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  min-height: calc(100vh - 160px);
+}
+
+.content__wrapper  h1 {
+  font-size: var(--fs-p-header-big) !important;
+}
+
+.settingsTopBar {
+  margin: 20px 0;
+}
+

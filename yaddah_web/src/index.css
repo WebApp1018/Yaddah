@@ -1,0 +1,259 @@
+:root {
+  --fs-base: 16px;
+  --fs-h1-header: 70px;
+  --fs-h1-big: 60px;
+  --fs-h1-sub: 53px;
+  --fs-h2-header: 55px;
+  --fs-h3-header: 34px;
+  --fs-h3-header-small: 30px;
+  --fs-p-header-big: 22px;
+  --fs-p-header: 20px;
+  --fs-p-small: 14px;
+  --fw-semibold: 700;
+  --ff-poppins-semibold: "Poppins SemiBold";
+  --ff-poppins-italic: "Poppins Italic";
+  --ff-rubik: "Rubik";
+  --clr-200: #f3f5f5;
+  --clr-primary: #bb5855;
+  --clr-secondary: #245357;
+  --clr-border: #707070;
+  --clr-font: #313131;
+  --clr-font-inverted: #fff;
+  --placeholder-color: #c9c9c9;
+  --text-color-black: #000;
+  --white-color: #fff;
+
+  --clr-primary: #bb5855;
+  --clr-secondary: #245357;
+  --clr-primary-alpha: #bb585550;
+  --clr-secondary-alpha: #24535750;
+
+  /* fonts */
+  --ff-poppins-semibold: "Poppins SemiBold";
+  --ff-poppins-italic: "Poppins Italic";
+  --ff-rubik: "Rubik";
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: local("Poppins SemiBold"),
+    url("./assets/fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Italic";
+  src: local("Poppins Itelic"), url("./assets/fonts/poppins/Poppins-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), url("./assets/fonts/rubik/Rubik-VariableFont_wght.ttf");
+}
+
+.ff-poppinSB {
+  font-family: "Poppins SemiBold";
+}
+
+.ff-poppinI {
+  font-family: "Poppins Italic";
+}
+
+.ff-rubik {
+  font-family: "Rubik";
+}
+
+.btn__bordered {
+  border: 2px solid var(--clr-secondary);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 8px;
+  text-transform: capitalize !important;
+}
+
+.btn__solid {
+  border: 2px solid;
+  padding: 0.5rem 1rem;
+  color: var(--clr-font-inverted) !important;
+  text-decoration: none;
+  border-radius: 8px;
+  text-transform: capitalize !important;
+}
+
+.bg__secondary {
+  background-color: var(--clr-secondary) !important;
+  border-color: var(--clr-secondary) !important;
+}
+
+.bg__primary {
+  background-color: var(--clr-primary) !important;
+  border-color: var(--clr-primary) !important;
+}
+
+body {
+  font-family: "Rubik" !important;
+  font-weight: 400 !important;
+  font-size: var(--fs-base);
+  color: var(--clr-font);
+}
+
+a {
+  color: var(--clr-font) !important;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1420px !important;
+}
+
+.maxLine1 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.maxLine2 {
+  display: -webkit-box;
+  --webkit-line-clamp: 2;
+  --webkit-box-orient: vertical;
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.paypal-button-container {
+  min-width: 100% !important;
+  max-width: 750px;
+}
+
+.paypal-button-container.paypal-button-layout-vertical.paypal-button-shape-rect.paypal-button-number-multiple.paypal-button-env-sandbox {
+  min-width: 100% !important;
+  max-width: 750px;
+}
+
+.paypal-buttons.paypal-buttons-context-iframe.paypal-buttons-label-unknown.paypal-buttons-layout-vertical {
+  min-width: 100% !important;
+}
+
+.paypal-button-container.paypal-button-layout-vertical.paypal-button-shape-rect.paypal-button-number-multiple.paypal-button-env-sandbox {
+  min-width: 100% !important;
+}
+
+.customCarousel .rec-arrow.rec.rec-arrow-left {
+  position: absolute;
+  z-index: 99;
+  left: 46px;
+  background: var(--clr-secondary);
+}
+
+.customCarousel .rec-arrow.rec.rec-arrow-right {
+  position: absolute;
+  z-index: 99;
+  right: 46px;
+  background: var(--clr-secondary);
+}
+
+.customCarousel .rec.rec-carousel {
+  position: relative;
+}
+
+.customCarousel .rec.rec-slider-container {
+  margin: 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1420px) {
+  header > .container,
+  section > .container,
+  footer > .container {
+    padding-inline: 40px !important;
+  }
+
+  header > .contianer,
+  section > .container,
+  footer > .container {
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .table-responsive-xxl {
+    padding: 0 1rem;
+    margin: auto -1rem;
+  }
+
+  .table-responsive-xxl th,
+  .table-responsive-xxl td {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --fs-base: 14px;
+    /*--fs-base: 14px; */
+    --fs-h1-header: 60px;
+    /*--fs-h1-header: 70px; */
+    --fs-h1-big: 52px;
+    /*--fs-h1-big: 60px; */
+    --fs-h1-sub: 38px;
+    /*--fs-h1-sub: 46px; */
+    --fs-h2-header: 42px;
+    /*--fs-h2-header: 55px; */
+    --fs-h3-header: 26px;
+    /*--fs-h3-header: 34px; */
+    --fs-h3-header-small: 22px;
+    /*--fs-h3-header-small: 30px; */
+    --fs-p-header-big: 18px;
+    /*--fs-p-header-big: 22px; */
+    --fs-p-header: 16px;
+    /*--fs-p-header: 20px; */
+    --fs-p-small: 12px;
+    /*--fs-p-small: 14px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --fs-h1-header: 60px;
+    --fs-h1-big: 52px;
+    --fs-h1-sub: 38px;
+    --fs-h2-header: 28px;
+    --fs-h3-header: 24px;
+  }
+
+  header > .container,
+  section > .container,
+  footer > .container {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .paypal-button-container {
+    /* min-width: 500px;
+    max-width: 750px; */
+    min-width: 100% !important;
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table-responsive-xxl {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.userNameStyles {
+  color: var(--clr-secondary);
+  font-family: var(--ff-poppins-semibold) !important;
+  text-transform: capitalize;
+  font-size: var(--fs-p-header);
+}

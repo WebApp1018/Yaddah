@@ -1,0 +1,29 @@
+.chat__wrapper {
+  position: relative;
+  border: 1px solid #dbe5ed;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+.chat__wrapper > div > div {
+  border-radius: 50px;
+  padding: 5px;
+  padding-right: 60px;
+}
+
+.chat_btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding: 0px;
+}
+
+.inputClass input {
+  border: none !important;
+  background-color: inherit !important;
+  border-radius: 30px;
+}

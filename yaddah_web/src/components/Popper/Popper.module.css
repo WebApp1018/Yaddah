@@ -1,0 +1,23 @@
+.popper__wrapper{
+    position: relative;
+}
+.popperElement{
+    position: absolute;
+    padding:1rem;
+    background-color: var(--clr-font-inverted);
+    box-shadow: 0 0 10px #00000030;
+    right:100%;
+    top:100%;
+    border-radius: 0.5rem;
+    z-index: 10;
+    white-space: nowrap;
+}
+.popperElement > li{
+    transition: 200ms ease-in background-color,200ms ease-in color;
+    padding:4px;
+    border-radius: 4px;
+}
+.popperElement > li:hover{
+    background-color: var(--clr-primary);
+    color:var(--clr-font-inverted);
+}

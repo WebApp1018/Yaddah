@@ -1,0 +1,10 @@
+extends baseEmail
+
+block content
+  p Hi #{payload.userName},
+  p Thanks for registering with us.
+  p Here is your login credentials: 
+  p Email: #{payload.email}
+  p Password: #{payload.password}
+  p Please click on the following link #{payload.verifyUrl} to verify your account.
+  p - Yaddah

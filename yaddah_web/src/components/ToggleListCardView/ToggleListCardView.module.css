@@ -1,0 +1,33 @@
+
+.Button_wrapper{
+    display: flex;
+}
+.togglebtn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid var(--clr-secondary);
+    cursor: pointer;
+
+  }
+  .togglebtn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    border: 1px solid var(--clr-secondary);
+  }
+
+  .active__ToggleBtn{
+    background-color: var(--clr-secondary);
+  }
+
+  .icon_active{
+    color: var(--clr-font-inverted);
+  }
